@@ -66,3 +66,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+
+.app-bgcolor{
+  background-color:rgba(15, 231, 69, 0.855) !important;
+
+}
+.app-dark-input-border{
+  border: 1px solid #de0909;
+}
+.as-botton{
+  min-width: 80px;
+}
