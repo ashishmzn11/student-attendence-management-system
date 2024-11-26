@@ -1,4 +1,5 @@
-import style from "./Login.module.css";
+import { Link } from "react-router-dom";
+import style from "../css/Login.module.css";
 import { IoIosContact } from "react-icons/io";
 function Login() {
   return (
@@ -14,7 +15,7 @@ function Login() {
         <div class="card">
           <div class={`card-body  ${style.wt}`}>
             <div class={`${style.icon}`}>
-              <IoIosContact class="app-bgcolor">fff</IoIosContact>
+              <IoIosContact class="app-bgcolor"></IoIosContact>
             </div>
           
             <div class={`input-group input-group-lg ${style.input}`}>
@@ -43,10 +44,10 @@ function Login() {
               
             </div>
             <div class={`input-group input-group-lg  ${style.input1}`}>
-             <p > Forget Password? <a href="#">Click here</a></p>
+             <p > Forget Password? <Link to="/ForgotPassword">Click here</Link></p>
             </div>
             <div class={`input-group input-group-lg  ${style.input1}`}>
-             <h1 class={`${style.renew}`}> New registration? <a href="#">Click here</a></h1>
+             <h1 class={`${style.renew}`}> New registration?<Link  to="/Registration">Click here</Link></h1>
             </div>
           </div>
         </div>
