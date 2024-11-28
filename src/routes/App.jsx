@@ -5,7 +5,6 @@ import Header from "../component/Header";
 // import Display from "../component/Display";
 // import Students from "../component/Students";
 import { Outlet } from "react-router-dom";
-// import Login from "./Login.jsx";
 // import { useState } from "react";
 function App() {
 

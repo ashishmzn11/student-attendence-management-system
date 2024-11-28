@@ -6,8 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import Bags from "./routes/Bags.jsx";
 // import Home from "./routes/Home.jsx";
-import Student from "./component/Student.jsx";
+import Student from "./routes/Student.jsx";
 import Display from "./component/Display.jsx";
+import Header from "./component/Header.jsx";
 import App from "./routes/App.jsx";
 import Login from "./routes/Login.jsx";
 import Registration from "./routes/Registration.jsx";
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <App/>,
     children: [
-      { path: "/Login", element: <Login/> },
+      { path: "/", element: <Login/> },
+      // { path: "/", element: <Login/> },
       { path: "/Registration", element: <Registration/> },
       { path: "/ForgotPassword", element: <ForgotPassword/> },
       { path: "/Student", element: <Student />  },

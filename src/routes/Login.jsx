@@ -38,9 +38,9 @@ function Login() {
             </div>
 
             <div class={`input-group input-group-lg  ${style.input1}`}>
-              <button
-                class="form-control btn btn-success app-bgcolor"
-              >Login</button>
+              <Link to="/Student"
+                class="form-control btn app-bgcolor"
+              >Login</Link>
               
             </div>
             <div class={`input-group input-group-lg  ${style.input1}`}>

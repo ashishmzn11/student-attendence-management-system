@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // import style from "./Registion.module.css";
 function Registration(){
   return(
@@ -55,6 +57,9 @@ function Registration(){
                   />
                 </div>
                 <button type="submit" className="btn  w-100 app-bgcolor">Register</button>
+                <div  className="row justify-content-center">
+                <Link to="/" className="btn mt-2 w-75 app-bgcolor">Back</Link>
+                </div>
               </form>
             </div>
           </div>
