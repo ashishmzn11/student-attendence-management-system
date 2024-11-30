@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import React, { useContext, useRef } from "react";
 function StDropdown3() {
-  const [Branch, setBranch] = useState("");
-  const Branchs = ["Mechanical", "Electrical", "Civil","CSE"];
+  const greadElement=useRef(["Mechanical", "Electrical", "Civil","CSE"]);
+  const reactions=greadElement.current.value;
+  greadElement.current.value="";
+
+const Branchs = ["Mechanical", "Electrical", "Civil","CSE"];
   const BranchSelect = (option) => {
-    const newitem=Branch(option);
-    setBranch(newitem);
+    const newitem=greadElement(option);
+    reactions(newitem);
   };
+ 
   return (
     <div className="dropdown w-100">
       <div className="input-group">
@@ -15,7 +20,7 @@ function StDropdown3() {
           type="text"
           className="form-control"
           placeholder="Branch"
-          value={Branch}
+          // value={greadElement}
           readOnly
         />
         <button
